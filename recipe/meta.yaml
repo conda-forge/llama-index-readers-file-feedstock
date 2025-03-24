@@ -1,5 +1,5 @@
 {% set name = "llama-index-readers-file" %}
-{% set version = "0.4.6" %}
+{% set version = "0.4.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/llama_index_readers_file-{{ version }}.tar.gz
-    sha256: 50119fdffb7f5aa4638dda2227c79ad6a5f326b9c55a7e46054df99f46a709e0
+    sha256: 89a765238a106af0f1e31ab8d4cb3ee33ac897080285bcce59101b420265ebd1
   # https://github.com/run-llama/llama_index/issues/10806
   - url: https://raw.githubusercontent.com/run-llama/llama_index/main/LICENSE
     sha256: 24f40b5190fdacabc24ddbb5f76364d15e4f030925220ea300d8a2dd4993c8cb
