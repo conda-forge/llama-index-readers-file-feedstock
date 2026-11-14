@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: llama-index-readers-file
-  version: 0.7.0
+  version: "0.8.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,13 +10,13 @@ package:
 
 source:
   - url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/llama_index_readers_file-${{ version }}.tar.gz
-    sha256: 328e3fe5da6da6172e3d71b60b5c76c1676707b220c8fc47edfaa795f9aefd16
+    sha256: 39c26e4032b2db3c586191ccdf86cf45023964187a67c72af4bf1349565b081b
   # https://github.com/run-llama/llama_index/issues/10806
   - url: https://raw.githubusercontent.com/run-llama/llama_index/main/LICENSE
     sha256: 24f40b5190fdacabc24ddbb5f76364d15e4f030925220ea300d8a2dd4993c8cb
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
